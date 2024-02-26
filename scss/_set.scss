@@ -1,21 +1,22 @@
 *,
 *::before,
 *::after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 html {
-    font-family: "Gilroy"; // шрифт по умолчанию по сайту
-    font-size: 0.5208335vw; // на разрешении 1920 0.520835vw === 10px
+    font-family: 'Gilroy';
+    font-size: 0.5208335vw;
     font-style: normal;
     font-weight: normal;
     -webkit-animation: bugfix infinite 1s;
     line-height: 1.2;
     margin: 0;
     padding: 0;
-
-    &.modal {
-        overflow: hidden;
-    }
+}
+html.modal {
+    overflow: hidden;
 }
 
 body {
@@ -25,8 +26,11 @@ body {
     line-height: 1.2;
     margin: 0;
     padding: 0;
-    color: #262525; // цвет по умолчанию текста по сайту
-    background-color: #FFFFFF;
+    color: #262525;
+    background-color: #ffffff;
+}
+body.modal {
+    overflow: hidden;
 }
 
 input,
@@ -39,9 +43,11 @@ textarea {
     border: none;
     color: inherit;
 }
+
 a {
     color: unset;
 }
+
 a,
 a:hover {
     text-decoration: none;
@@ -54,12 +60,18 @@ textarea {
     outline: none;
     cursor: pointer;
     font: inherit;
-    &:focus {
-        outline: none;
-    }
-    &:active {
-        outline: none;
-    }
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+    outline: none;
+}
+button:active,
+input:active,
+a:active,
+textarea:active {
+    outline: none;
 }
 
 h1,
@@ -72,6 +84,7 @@ h6 {
     margin: 0;
     padding: 0;
 }
+
 p {
     margin-top: 0;
     margin-bottom: 0;
@@ -91,6 +104,7 @@ button {
     padding: 0;
     background-color: transparent;
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -101,21 +115,23 @@ ul li {
     padding: 0;
     list-style: none;
 }
+
 section:first-of-type {
-    padding-top: 18rem;
+    padding-top: 19.6rem;
 }
+
 .container {
     width: 172rem;
     margin: 0 auto;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
     -moz-appearance: textfield;
 }
 
@@ -127,20 +143,17 @@ section {
     html {
         font-size: 5px;
         font-size: 1.5625vw;
-        font-size: calc((100/375) * 5vw); // где 375 это ширина моб версии макета
+        font-size: 1.3333333333vw;
         -webkit-text-size-adjust: none;
     }
-
     body {
         -webkit-text-size-adjust: none;
     }
-
     section:first-of-type {
         padding-top: 19rem;
     }
-
     .container {
-        padding: 0 2rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+        padding: 0 2rem;
         width: 100%;
     }
 }
