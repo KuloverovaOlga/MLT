@@ -192,3 +192,21 @@ var certificates_page_swiper = new Swiper('.certificates-swiper', {
         },
     },
 });
+
+let catalogBanner = new Swiper('.catalog-banner__swiper', {
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    effect: 'fade',
+    autoHeight: true,
+
+    // breakpoints: {
+    //     768: {
+    //         autoHeight: true,
+    //     },
+    // },
+
+    navigation: {
+        nextEl: '.catalog-banner__swiper-next',
+        prevEl: '.catalog-banner__swiper-prev',
+    },
+});
