@@ -109,7 +109,7 @@
     }
     .order-left {
         width: auto;
-        margin-bottom: 5.4rem;
+        margin-bottom: 8rem;
     }
     .order-left__title {
         font-size: 4.4rem;
@@ -136,9 +136,12 @@
         gap: 4rem;
     }
     .order-left__form .input {
-        font-size: 2.6rem;
         padding: 3.4rem 4rem;
         width: 100%;
+        border-color: #957816;
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 5.2rem;
     }
     .order-left__btn {
         font-size: 3.6rem;

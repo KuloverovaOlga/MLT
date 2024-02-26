@@ -148,7 +148,6 @@
     .swiper-button-next {
         width: 8rem;
         height: 8rem;
-
     }
     .swiper-button-prev.swiper-button-disabled,
     .swiper-button-next.swiper-button-disabled {
@@ -217,7 +216,6 @@
         height: 8rem;
         background: url(../img/icon/swiper-right-black-noactive.svg) no-repeat;
         background-size: contain;
-        
     }
     .main-top {
         display: -webkit-box;
@@ -265,6 +263,7 @@
 @import 'laboratory';
 @import 'payment';
 @import 'wholesaler';
+@import 'catalog-banner';
 
 @media (min-width: 48.01em) {
     .mobile {
