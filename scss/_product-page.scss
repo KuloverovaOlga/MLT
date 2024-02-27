@@ -1,3 +1,8 @@
+.product-page {
+    padding: 19.6rem 0 2.6rem;
+    margin-bottom: 0;
+}
+
 .product-page .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,6 +84,9 @@
 .product-page-right__text {
     margin-bottom: 4rem;
     position: relative;
+    & span {
+        margin-right: 0.8rem;
+    }
 }
 .product-page-right__text::after {
     content: '';
@@ -93,6 +101,8 @@
 .product-page-right__spec span {
     color: #7c7c7c;
     font-weight: 700;
+    display: inline-block;
+    margin-right: 0.8rem;
 }
 
 .product-page-right__spec {
@@ -116,6 +126,7 @@
         & span {
             text-decoration: underline;
             color: #121820;
+            font-weight: 500;
         }
     }
     &-svg-box {
@@ -132,7 +143,7 @@
 
 .product-page-right__spec--bottom {
     margin-bottom: 4rem;
-    display: block;
+    display: inline-block;
 }
 
 .product-page-right__info {
@@ -199,6 +210,9 @@
 }
 
 @media (max-width: 48em) {
+    .product-page {
+        padding-bottom: 8rem;
+    }
     .product-page .container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -270,6 +284,14 @@
         left: 0;
         top: 0;
     }
+
+    .product-page-right__spec span {
+        color: #7c7c7c;
+        font-weight: 700;
+        margin-right: 1.6rem;
+    }
+
+
     .product-page-right__spec {
         margin-bottom: 2.4rem;
         &--doc {
@@ -279,6 +301,10 @@
         }
         &-link {
             gap: 1.6rem;
+            & span {
+                font-weight: 500;
+                color: #121820;
+            }
         }
         &-svg-box {
             width: 4.8rem;
@@ -288,11 +314,19 @@
     }
     .product-page-right__spec--bottom {
         margin-bottom: 4.8rem;
+          & span {
+            margin-right: 1.6rem;
+        }
     }
-    .product-page-right__spec span {
-        color: #7c7c7c;
-        font-weight: 700;
+ 
+
+    .product-page-right__text {
+        margin-bottom: 4rem;
+        position: relative;
+      
     }
+  
+
     .product-page-right__info {
         margin-bottom: 8rem;
         display: -webkit-box;

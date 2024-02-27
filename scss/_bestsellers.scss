@@ -199,6 +199,10 @@
     .bestsellers-slide {
         /* width: 35rem !important; */
         height: 80.4rem;
+
+
+      
+
         width: 52.4rem;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -216,6 +220,10 @@
         }
         &:first-child {
         }
+    }
+
+    .bestsellers--main .bestsellers-slide {
+        height: 82rem;
     }
     .bestsellers-slide-informations {
         align-items: flex-end;
@@ -258,6 +266,16 @@
             display: none;
         }
     }
+
+    .bestsellers--main .bestsellers-slide-container {
+        flex-grow: 1;
+        margin-bottom: 0;
+        .bestsellers-slide__number,
+        .bestsellers-slide__link {
+            display: block;
+        }
+    }
+
     .bestsellers-slide__title {
         width: auto;
         margin-bottom: auto;

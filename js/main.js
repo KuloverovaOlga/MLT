@@ -49,7 +49,7 @@ $(document).ready(function () {
                     });
                 $(this).parent();
                 $('.product-page-right')
-                    .children('.product-page-right__spec')
+                    .children('.product-page-right__spec:not(.product-page-right__spec--bottom)')
                     .each(function () {
                         $(this).toggleClass('active');
                     });
