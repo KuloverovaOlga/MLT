@@ -526,6 +526,7 @@ section {
     position: relative;
     width: 4.8rem;
     height: 4.8rem;
+    z-index: 10;
   }
   .header__burger-icon {
     transition-duration: 0.5s;
@@ -604,6 +605,8 @@ section {
   .header__phone-svg-box {
     width: 5.6rem;
     height: 5rem;
+    position: relative;
+    z-index: 10;
   }
   .header__phone-svg-box svg {
     width: 100%;
@@ -622,6 +625,8 @@ section {
   }
   .header.active .logo-black {
     display: unset;
+    position: relative;
+    z-index: 10;
   }
   .header-container {
     display: none;
@@ -633,7 +638,7 @@ section {
     height: 127.8rem;
     background-color: #fff;
     color: #121820;
-    z-index: -1;
+    z-index: 5;
   }
   .header-container--catalog {
     padding: 20rem 2rem 0;
