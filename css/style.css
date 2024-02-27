@@ -1795,6 +1795,10 @@ section {
   margin-top: -15rem;
 }
 
+.bestsellers--main .bestsellers-slide-container {
+  flex-grow: 1;
+}
+
 .bestsellers-slide {
   height: 48.4rem;
   display: flex;
