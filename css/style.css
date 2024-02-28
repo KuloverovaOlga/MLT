@@ -4091,6 +4091,10 @@ section:first-of-type.catalog {
   background: #121820;
   padding-bottom: 15rem;
   color: #fff;
+  margin-bottom: 0;
+}
+.contacts + .order {
+  padding-top: 15rem;
 }
 
 .contacts .container {
@@ -4169,6 +4173,9 @@ section:first-of-type.catalog {
 @media (max-width: 48em) {
   .contacts {
     padding-bottom: 12rem;
+  }
+  .contacts + .order {
+    padding-top: 16rem;
   }
   .contacts .container {
     width: auto;
