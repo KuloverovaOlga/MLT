@@ -196,7 +196,7 @@ var certificates_page_swiper = new Swiper('.certificates-swiper', {
 let catalogBanner = new Swiper('.catalog-banner__swiper', {
     slidesPerGroup: 1,
     slidesPerView: 1,
-    effect: 'fade',
+    // effect: 'fade',
     autoHeight: true,
 
     // breakpoints: {

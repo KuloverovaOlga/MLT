@@ -1,7 +1,13 @@
 section:first-of-type.catalog {
     padding-top: 11.4rem;
 }
+.catalog {
+    margin-bottom: 0;
 
+    & + .catalog-banner {
+        margin-top: 15rem;
+    }
+}
 .catalog .container {
     width: auto;
 }
@@ -113,6 +119,10 @@ section:first-of-type.catalog {
 @media (max-width: 48em) {
     .catalog {
         margin-bottom: 0;
+
+        & + .catalog-banner {
+            margin-top: 12rem;
+        }
     }
     .catalog-top {
         display: -webkit-box;
@@ -126,7 +136,7 @@ section:first-of-type.catalog {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        margin-bottom: 6.4rem;
+        margin-bottom: -3rem;
     }
     .catalog-top .title-text {
         display: none;
@@ -238,6 +248,10 @@ section:first-of-type.catalog {
         width: 37.4rem;
         margin-bottom: 4.4rem;
         padding: 2rem;
+
+        .bestsellers-slide__img {
+            height: 40rem;
+        }
     }
 }
 
