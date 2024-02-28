@@ -1324,6 +1324,9 @@ section {
 .working {
   margin-bottom: 15rem;
 }
+.working + .order {
+  padding-top: 0;
+}
 
 .working .container {
   display: flex;
@@ -1430,35 +1433,30 @@ section {
   transition: color 0.3s;
 }
 
-.working-item:hover {
-  background: #121820;
+@media (min-width: 48em) {
+  .working-item:hover {
+    background: #121820;
+  }
+  .working-item:hover svg {
+    fill: #fff;
+  }
+  .working-item:hover .working-item__icon {
+    filter: grayscale(1) brightness(1000%);
+    will-change: filter;
+  }
+  .working-item:hover .working-item__number {
+    opacity: 1;
+  }
+  .working-item:hover .working-item__title {
+    color: #fff;
+  }
+  .working-item:hover .working-item__text {
+    color: #fff;
+  }
+  .working-item:hover .working-item__btn {
+    color: #fff;
+  }
 }
-
-.working-item:hover svg {
-  fill: #fff;
-}
-
-.working-item:hover .working-item__icon {
-  filter: grayscale(1) brightness(1000%);
-  will-change: filter;
-}
-
-.working-item:hover .working-item__number {
-  opacity: 1;
-}
-
-.working-item:hover .working-item__title {
-  color: #fff;
-}
-
-.working-item:hover .working-item__text {
-  color: #fff;
-}
-
-.working-item:hover .working-item__btn {
-  color: #fff;
-}
-
 /* .working-right {
     width: 54.4rem;
     height: 55.2rem;
@@ -2598,6 +2596,13 @@ section:first-of-type.catalog {
   padding-top: 11.4rem;
 }
 
+.catalog {
+  margin-bottom: 0;
+}
+.catalog + .catalog-banner {
+  margin-top: 15rem;
+}
+
 .catalog .container {
   width: auto;
 }
@@ -2704,12 +2709,15 @@ section:first-of-type.catalog {
   .catalog {
     margin-bottom: 0;
   }
+  .catalog + .catalog-banner {
+    margin-top: 12rem;
+  }
   .catalog-top {
     display: flex;
     width: auto;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 6.4rem;
+    margin-bottom: -3rem;
   }
   .catalog-top .title-text {
     display: none;
@@ -2789,6 +2797,9 @@ section:first-of-type.catalog {
     width: 37.4rem;
     margin-bottom: 4.4rem;
     padding: 2rem;
+  }
+  .catalog-right__item .bestsellers-slide__img {
+    height: 40rem;
   }
 }
 .catalog-right-top {
@@ -5758,13 +5769,20 @@ section:first-of-type.catalog {
 .catalog-banner {
   background-color: #121820;
   color: #ffffff;
+  margin-bottom: 15rem;
 }
 .catalog-banner__slider {
   position: relative;
-}
-.catalog-banner__swiper-slide {
   display: flex;
   justify-content: space-between;
+}
+.catalog-banner__swiper {
+  position: relative;
+  width: 80rem;
+  margin: 0;
+  z-index: 10;
+}
+.catalog-banner__swiper-slide {
   height: 100%;
 }
 .catalog-banner__swiper-navigation {
@@ -5818,8 +5836,6 @@ section:first-of-type.catalog {
   margin-bottom: 2.8rem;
 }
 .catalog-banner__right {
-  position: relative;
-  width: 80rem;
   padding: 8.8rem 0 17.7rem 0;
 }
 .catalog-banner__right-subtitle {
@@ -5837,9 +5853,12 @@ section:first-of-type.catalog {
   position: absolute;
   top: 1.6rem;
   bottom: 1.3rem;
-  left: -6rem;
-  z-index: -1;
+  left: 88rem;
+  z-index: 1;
   width: 94.4rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .catalog-banner__right-background img {
   width: 100%;
@@ -5872,15 +5891,18 @@ section:first-of-type.catalog {
   line-height: 145%;
 }
 .catalog-banner__text p:not(:last-child) {
-  margin-bottom: 4rem;
+  margin-bottom: 1.2rem;
 }
 @media (max-width: 48em) {
+  .catalog-banner {
+    margin-bottom: 8.8rem;
+  }
   .catalog-banner__slider {
     padding-bottom: 2rem;
-  }
-  .catalog-banner__swiper-slide {
     flex-direction: column;
-    background-color: #121820;
+  }
+  .catalog-banner__swiper {
+    width: auto;
   }
   .catalog-banner__swiper-navigation {
     left: 4rem;
@@ -5898,7 +5920,7 @@ section:first-of-type.catalog {
   }
   .catalog-banner__left {
     padding: 8.8rem 0 0 0;
-    margin-bottom: 6.4rem;
+    margin-bottom: 10.4rem;
   }
   .catalog-banner__left-title {
     font-size: 5.4rem;
@@ -5943,10 +5965,10 @@ section:first-of-type.catalog {
     max-width: 63rem;
   }
   .catalog-banner__right-background {
-    top: 0;
+    top: calc(100% - 88rem);
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 86rem;
   }
   .catalog-banner__img {
     width: 54.03rem;
