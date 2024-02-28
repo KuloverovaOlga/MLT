@@ -150,6 +150,12 @@
     @media (max-width: 48em) {
         margin-bottom: 8.8rem;
 
+        & + .working {
+            .container {
+                margin-bottom: 16rem;
+            }
+        }
+
         &__slider {
             padding-bottom: 2rem;
             flex-direction: column;

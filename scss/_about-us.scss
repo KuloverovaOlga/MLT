@@ -74,6 +74,12 @@
 @media (max-width: 48em) {
     .about-us {
         padding-bottom: 20.4rem;
+
+        & + .working {
+            .container {
+                margin-bottom: 16rem;
+            }
+        }
     }
     .about-us .container {
         width: auto;
