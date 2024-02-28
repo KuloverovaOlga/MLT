@@ -666,11 +666,17 @@ section {
     padding-bottom: 4rem;
     border-bottom: 0.5px solid rgba(124, 124, 124, 0.5);
   }
+  .header__item {
+    font-weight: 500;
+  }
   .header__item--back-btn {
     display: flex;
     align-items: center;
     gap: 25.6rem;
     justify-content: flex-start;
+  }
+  .header__item--back-btn .header__item {
+    font-weight: 700;
   }
   .header__item--back-btn .header__list-item-svg-box {
     width: 4.4rem;
